@@ -4,16 +4,12 @@ import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'ng-base';
 
   constructor(public http: HttpClient) {
   }
 
-  ngOnInit(): void {
-    this.http.get<string>('localhost:12345')
-      .subscribe(x => {});
-  }
 }

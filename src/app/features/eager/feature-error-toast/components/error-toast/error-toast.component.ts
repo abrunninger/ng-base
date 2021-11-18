@@ -21,7 +21,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
       ])
     ]),
   ],
-  styleUrls: ['./error-toast.component.css']
+  styleUrls: ['./error-toast.component.scss']
 })
 export class ErrorToastComponent implements OnInit {
 
